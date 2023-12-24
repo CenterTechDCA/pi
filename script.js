@@ -31,7 +31,7 @@ window.onload = function a(){
   //FECHAR A pÁGINA
 }
 function b(){
-        const scriptURL = ''
+        const scriptURL = 'https://script.google.com/a/macros/solvay.com/s/AKfycbzNQp-mdw5_PhrKTgQG9POb_JryelmBYjh8R6tH7xkPY0JJWOFb8VWybriLHl1rYrediA/exec'
         
         const form = document.forms['google-sheet1']
 
