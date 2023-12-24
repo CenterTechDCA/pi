@@ -21,8 +21,8 @@ window.onload = function a(){
   //pegando dados da URL: !!!OBSERVAÇÂO!!!file:///C:/Users/deol8576/Desktop/projeto%20PI%20+%20JS/index.html?name=6789ABCDanali=KLMNOPQR =>padronização
   var dadoSAMPLE = url.slice(6,14)//8chate, desde que o title = 4chat
   var dadoANALYSIS = url.slice(20,28)//8chate, desde que o title = 4chat
-  amostraSAIDA.innerText = dadoSAMPLE
-  analiseSAIDA.innerText = dadoANALYSIS
+  amostraSAIDA.value = dadoSAMPLE
+  analiseSAIDA.value = dadoANALYSIS
   
   //Criar o RQ_request number
   var data = new Date()
@@ -35,7 +35,7 @@ window.onload = function a(){
   
   var code = String(timeHRS) + String(timeMIN) + String(timeSEC) + "_" + String(ano) + String(mes) + String(dia)
   
-  requisicaoSAIDA.innerText = code 
+  requisicaoSAIDA.value = code 
   
   //executar a gravação
 
