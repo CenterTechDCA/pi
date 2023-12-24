@@ -4,7 +4,7 @@ var amostraSAIDA = document.getElementById("am");
 var analiseSAIDA = document.getElementById("ca");
 var requisicaoSAIDA = document.getElementById("rn");
 
-function a(){
+window.onload = function a(){
   //pegando dados da URL: !!!OBSERVAÇÂO!!!file:///C:/Users/deol8576/Desktop/projeto%20PI%20+%20JS/index.html?name=6789ABCDanali=KLMNOPQR =>padronização
   var dadoSAMPLE = url.slice(6,14)//8chate, desde que o title = 4chat
   var dadoANALYSIS = url.slice(20,28)//8chate, desde que o title = 4chat
