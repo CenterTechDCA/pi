@@ -1,4 +1,4 @@
-
+/*
 const scriptURL = 'https://script.google.com/a/macros/solvay.com/s/AKfycbzNQp-mdw5_PhrKTgQG9POb_JryelmBYjh8R6tH7xkPY0JJWOFb8VWybriLHl1rYrediA/exec';
 
 const form = document.forms['google-sheet1'];
@@ -9,7 +9,7 @@ form.addEventListener('submit', e=>{
         .then(Response => $("#form_alerts").html("<div class='alert alert-sucess'>Mensagem enviada com sucesso</div>"))
         .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Erro ao enviar a mensagem</div>"))
 });
-
+*/
 
 var testes = document.getElementById("testes");
 var url = window.location.search;
