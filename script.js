@@ -1,3 +1,16 @@
+function b(){
+        const scriptURL = 'https://script.google.com/a/macros/solvay.com/s/AKfycbzNQp-mdw5_PhrKTgQG9POb_JryelmBYjh8R6tH7xkPY0JJWOFb8VWybriLHl1rYrediA/exec'
+        
+        const form = document.forms['google-sheet1']
+
+        form.addEventListener('submit', e=>{
+            e.preventDefault()
+            fetch(scriptURL,{method: 'POST', body: new FormData(form)})
+                .then(Response => $("#form_alerts").html("<div class='alert alert-sucess'>Mensagem enviada com sucesso</div>"))
+                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Erro ao enviar a mensagem</div>"))
+        })
+}
+
 var testes = document.getElementById("testes");
 var url = window.location.search;
 var amostraSAIDA = document.getElementById("am");
@@ -26,19 +39,6 @@ window.onload = function a(){
   
   //executar a gravação
 
-  b()
-
   //FECHAR A pÁGINA
 }
-function b(){
-        const scriptURL = 'https://script.google.com/a/macros/solvay.com/s/AKfycbzNQp-mdw5_PhrKTgQG9POb_JryelmBYjh8R6tH7xkPY0JJWOFb8VWybriLHl1rYrediA/exec'
-        
-        const form = document.forms['google-sheet1']
 
-        form.addEventListener('submit', e=>{
-            e.preventDefault()
-            fetch(scriptURL,{method: 'POST', body: new FormData(form)})
-                .then(Response => $("#form_alerts").html("<div class='alert alert-sucess'>Mensagem enviada com sucesso</div>"))
-                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Erro ao enviar a mensagem</div>"))
-        })
-}
