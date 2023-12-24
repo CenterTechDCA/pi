@@ -26,5 +26,19 @@ window.onload = function a(){
   
   //executar a gravação
 
+  b()
+
   //FECHAR A pÁGINA
+}
+function b(){
+        const scriptURL = ''
+        
+        const form = document.forms['google-sheet1']
+
+        form.addEventListener('submit', e=>{
+            e.preventDefault()
+            fetch(scriptURL,{method: 'POST', body: new FormData(form)})
+                .then(Response => $("#form_alerts").html("<div class='alert alert-sucess'>Mensagem enviada com sucesso</div>"))
+                .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Erro ao enviar a mensagem</div>"))
+        })
 }
